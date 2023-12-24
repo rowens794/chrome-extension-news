@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Article Summary",
+  "version": "1.0",
+  "description": "Generate summaries of articles using LLM",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon-48.png"
+  },
+  "background": {
+    "service_worker": "dist/background.bundle.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["dist/content.bundle.js"],
+      "css": ["page-content.css"]
+    }
+  ],
+
+  "host_permissions": ["http://*/*", "https://*/*"]
+}

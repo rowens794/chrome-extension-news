@@ -1,0 +1,16 @@
+#summary-button-12-23 {
+  background-color: #ffffff;
+  border: 1px solid #565656;
+  border-radius: 3px;
+  color: #000000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 6px 12px; /* Added units */
+}
+
+#summary-button-12-23:hover {
+  background-color: #7fffd4;
+}
