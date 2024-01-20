@@ -1,8 +1,8 @@
 #summary-button-12-23 {
   background-color: #ffffff;
-  border: 1px solid #565656;
+  border: 1px solid #939393;
   border-radius: 3px;
-  color: #000000;
+  color: #939393;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -12,5 +12,26 @@
 }
 
 #summary-button-12-23:hover {
-  background-color: #7fffd4;
+  background-color: #78ce76;
+}
+
+#summary-panel-12-23 {
+  position: fixed;
+  top: 0;
+  right: -450px; /* Start off-screen */
+  width: 450px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+  transition: right 0.5s ease-in-out;
+  z-index: 2147483640;
+}
+
+#summary-panel-12-23.hidden {
+  right: -450px; /* Hidden state */
+}
+
+#summary-panel-12-23.visible {
+  right: 0px; /* Visible state */
 }

@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Article Summary</title>
+    <title>ByteSize Bullets</title>
     <link rel="stylesheet" type="text/css" href="popup.css" />
   </head>
   <body>
     <div id="popup-content">
-      <button id="summarize-button">Summarize Article</button>
-      <div id="status">Waiting for article...</div>
+      <div id="heading-container">
+        <h1 id="aa-heading">ByteSize Bullets</h1>
+      </div>
+
+      <div id="panel-container">
+        <div id="gemini-input-container"></div>
+
+        <p id="test"></p>
+      </div>
     </div>
+
+    <p id="summary"></p>
+    <p id="apikey"></p>
+
     <script src="popup.js"></script>
   </body>
 </html>
